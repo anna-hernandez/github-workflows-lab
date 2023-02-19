@@ -1,6 +1,9 @@
-def print_greeting():
-    print("Hi there! this repo is set up to test GitHub Actions workflows")
+def print_greeting(message):
+    print(
+        message,
+    )
 
 
 if __name__ == "__main__":
-    print_greeting()
+    message = "Hi there! this repo is set up to test GitHub Actions workflows"
+    print_greeting(message)
