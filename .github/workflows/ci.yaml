@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - "**" # every branch
-      - "!main" # except main
-      - "!develop" # except develop
   workflow_dispath: # to be able to run workflow manually from GitHub actions 
 
 jobs:
