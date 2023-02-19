@@ -1,2 +1,4 @@
 pandas
 numpy
+nox==2022.11.21
+black==23.1.0

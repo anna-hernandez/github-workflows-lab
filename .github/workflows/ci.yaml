@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - "**" # every branch
+      - "!main" # except main
+      - "!develop" # except develop
+  workflow_dispath: # to be able to run workflow manually from GitHub actions 
 
 jobs:
   build:
@@ -22,5 +25,5 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: execute code
-        run: python main.py
+      - name: lintint
+        run: pip install nox
