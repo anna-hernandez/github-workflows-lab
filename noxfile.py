@@ -1,10 +1,10 @@
 import nox
 
-locations = ["src", "tests", "noxfile.py"]
+locations = ["src"]
 
 
-@nox.session("python=3.9")
+@nox.session(python=["3.9"])
 def black(session):
-    args = session.posargs or locations
+    args = locations
     session.install("black")
     session.run("black", "--line-length", "79", *args)
