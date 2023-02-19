@@ -1,7 +1,7 @@
 name: unit tests
 
 on:
-  pull_request:
+  push:
     branches:
       - "**" # every branch
   workflow_dispatch: # to be able to run workflow manually from GitHub actions 
