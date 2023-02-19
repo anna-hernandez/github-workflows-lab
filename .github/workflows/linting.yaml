@@ -1,7 +1,7 @@
-name: unit tests
+name: linting
 
 on:
-  pull_request:
+  push:
     branches:
       - "**" # every branch
   workflow_dispatch: # to be able to run workflow manually from GitHub actions 
@@ -23,5 +23,5 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: run unit tests
-        run: pytest
+      - name: linting
+        run: nox
