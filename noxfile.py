@@ -3,7 +3,7 @@ import nox
 locations = ["src"]
 
 
-@nox.session(python=["3.8"])
+@nox.session(python=["3.8", "3.9", "3.10", "3.11"])
 def black(session):
     args = session.posargs or locations
     session.install("black")
