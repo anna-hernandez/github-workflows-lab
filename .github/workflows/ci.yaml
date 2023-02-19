@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - "**" # every branch
-  workflow_dispath: # to be able to run workflow manually from GitHub actions 
+  workflow_dispatch: # to be able to run workflow manually from GitHub actions 
 
 jobs:
   build:
