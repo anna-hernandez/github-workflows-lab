@@ -1,9 +1,10 @@
 name: integration tests
 
 on:
-  push:
+  pull_request:
     branches:
-      - "**" # every branch
+      - "develop"
+      - "main"
   workflow_dispatch: # to be able to run workflow manually from GitHub actions 
 
 jobs:
